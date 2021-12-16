@@ -18,6 +18,9 @@ body {
     color: ivory;
     text-align: center;
 }
+h1, h2, h3 {
+    text-transform: uppercase;
+}
 
 h1 {
     font-size: 50px;
@@ -27,23 +30,19 @@ h1 {
     -webkit-text-fill-color: transparent;
   }
 
-h1, h2, h3 {
-    text-transform: uppercase;
-}
-
 .myName {
     margin: auto;
 }
 
-.main-info {
+.container {
     width: 85%;
     min-height: 90vh;
     margin: auto;
-    padding-top: 100px;
+    padding-top: 10vh;
     text-align: center;
 }
 
-.main-info h2 {
+.section-title {
     background: linear-gradient(45deg, rgb(79, 224, 181) 20%, #d33bd3);
     border-radius: 5px;
     margin-bottom: 40px;
@@ -64,7 +63,7 @@ h1, h2, h3 {
     justify-content: space-between;
 }
 
-.talent {
+.card-talent {
     position: relative;
     /* float:left; */
     width: 250px;
@@ -79,35 +78,35 @@ h1, h2, h3 {
     box-sizing: border-box;
 }
 
-.talent:hover {
+.card-talent:hover {
     transition: 0.3s;
     /* font-weight: bold; */
     /* font-size: 18px; */
     cursor: pointer;
 }
 
-.talent:nth-child(even) {
+.card-talent:nth-child(even) {
     border: 2px solid rgba(79, 224, 181, .3);
     box-shadow: 0px 0px 8px rgb(79, 224, 181);
 }
 
-.talent:nth-child(even):hover {
+.card-talent:nth-child(even):hover {
     border: 2px solid rgb(79, 224, 181);
     box-shadow: 0px 0px 20px rgb(79, 224, 181);
 }
 
-.talent:nth-child(odd) {
+.card-talent:nth-child(odd) {
     border: 2px solid rgba(211, 63, 211, .3);
     box-shadow: 0px 0px 8px rgb(211, 63, 211);
 }
 
-.talent:nth-child(odd):hover {
+.card-talent:nth-child(odd):hover {
     border: 2px solid #d33bd3;
     box-shadow: 0px 0px 20px #d33bd3;
 }
 
 
-.talent p {
+.card-talent p {
     color: ivory;
     padding: 20px 8px;
 }
@@ -187,11 +186,11 @@ h1, h2, h3 {
     -webkit-text-fill-color: transparent;
 }
 
-.footer {
+/* .footer {
     background-color: black;
     height: 300px;
     color: ivory;
-}
+} */
 
 .footer h4 {
     font-weight: normal;
@@ -202,4 +201,20 @@ h1, h2, h3 {
 .feedback {
     width: 75%;
     margin: auto;
+}
+
+.btn {
+    color: ivory;
+    background: linear-gradient(45deg, rgb(79, 224, 181) 20%, #d33bd3);
+    width: 100%;
+    height: 40px;
+}
+
+.greating-display {
+    width: 100%;
+    height: 400px;
+    font-size: 5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
