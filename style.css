@@ -1,0 +1,205 @@
+body, h1, h2, h3, h4, h5, h6, p, a, hr {
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Roboto', sans-serif;
+    /* font-family: Verdana, Geneva, Tahoma, sans-serif; */
+    color:ivory;
+}
+
+body {
+    background-color: rgb(29, 29, 29);
+}
+
+.header {
+    height: 80px;
+    width: 100%;
+    padding: 10px 0px;
+    background-color: black;
+    color: ivory;
+    text-align: center;
+}
+
+h1 {
+    font-size: 50px;
+    background: -webkit-linear-gradient(45deg, rgb(79, 224, 181) 20%, #d33bd3);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+
+h1, h2, h3 {
+    text-transform: uppercase;
+}
+
+.myName {
+    margin: auto;
+}
+
+.main-info {
+    width: 85%;
+    min-height: 90vh;
+    margin: auto;
+    padding-top: 100px;
+    text-align: center;
+}
+
+.main-info h2 {
+    background: linear-gradient(45deg, rgb(79, 224, 181) 20%, #d33bd3);
+    border-radius: 5px;
+    margin-bottom: 40px;
+    margin-left: 10px;
+    margin-right: 10px;
+    letter-spacing: 5px;
+    font-weight: bolder;
+    padding: 10px;
+}
+
+.cards {
+    position: relative;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    padding-bottom: 100px;
+    /* align-content: center; */
+    justify-content: space-between;
+}
+
+.talent {
+    position: relative;
+    /* float:left; */
+    width: 250px;
+    height: 300px;
+    border-radius: 5px;
+    line-height: 150%;
+    margin: 20px;
+    /* margin-right: 20px;
+    margin-bottom: 20px; */
+    text-align: left;
+    transition: 0.5s;
+    box-sizing: border-box;
+}
+
+.talent:hover {
+    transition: 0.3s;
+    /* font-weight: bold; */
+    /* font-size: 18px; */
+    cursor: pointer;
+}
+
+.talent:nth-child(even) {
+    border: 2px solid rgba(79, 224, 181, .3);
+    box-shadow: 0px 0px 8px rgb(79, 224, 181);
+}
+
+.talent:nth-child(even):hover {
+    border: 2px solid rgb(79, 224, 181);
+    box-shadow: 0px 0px 20px rgb(79, 224, 181);
+}
+
+.talent:nth-child(odd) {
+    border: 2px solid rgba(211, 63, 211, .3);
+    box-shadow: 0px 0px 8px rgb(211, 63, 211);
+}
+
+.talent:nth-child(odd):hover {
+    border: 2px solid #d33bd3;
+    box-shadow: 0px 0px 20px #d33bd3;
+}
+
+
+.talent p {
+    color: ivory;
+    padding: 20px 8px;
+}
+
+.bg {
+    background-color: rgba(0, 0, 0, 0.25);
+    background-position: center;
+    height: 58%;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    /* margin-bottom: 20px; */
+    opacity: .4;
+    transition: .4s;
+}
+
+.bg:hover {
+    transition: .5s;
+    opacity: 1;
+    background-size: 150%;
+}
+
+.music {
+    background-image: url(images/music.jpg);
+    background-size: 140%;
+}
+.codding {
+    background-image: url(images/codding.jpg);
+    background-size: 125%;
+}
+.modeling {
+    background-image: url(images/3d.jpg);
+    background-size: 130%;
+}
+.chess {
+    background-image: url(images/chess.jpg);
+    background-size: 110%;
+}
+
+.talent-title {
+    width: 100%;
+    height: 42%;
+    background-color: transparent;
+}
+
+.born {
+    background-color: #fff;
+    background-image: url(https://versicherungswirtschaft-heute.de/wp-60d20-content/uploads/2019/12/magdeburg-3455247_1920.jpg);
+    background-position: center;
+    background-size: cover;
+    background-attachment: local;
+    height: 100vh;
+    width: 100%;
+}
+
+.born-overlay {
+    display: flex;
+    /* background-color: rgba(14, 14, 14, 0.4); */
+    background: linear-gradient(to top, transparent 35%, black);
+    width: 100%;
+    height: 100%;
+}
+
+.born h2 {
+  color: ivory;
+  letter-spacing: 8px;
+  padding: 10px;
+}
+
+
+
+/* FOOTER */
+.horizontalRow {
+    height: 5px;
+    width: 100%;
+    margin-bottom: 10px;
+    background: -webkit-linear-gradient(45deg, rgb(79, 224, 181) 20%, #d33bd3);
+    -webkit-text-fill-color: transparent;
+}
+
+.footer {
+    background-color: black;
+    height: 300px;
+    color: ivory;
+}
+
+.footer h4 {
+    font-weight: normal;
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+.feedback {
+    width: 75%;
+    margin: auto;
+}
