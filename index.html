@@ -14,42 +14,41 @@
 <!-- ШАПКА САЙТА -->
 
   <header class="header">
-      <div class="logo">
-      </div>
-
-      <div class="myName">
-    <h1>Daniel Fesenko</h1>
-    <p>"Уже 10 лет занимаюсь какой-то хуйнёй."</p>
-      </div>
+    <div class="myName">
+      <h1>Daniel Fesenko</h1>
+      <p>"Уже 10 лет занимаюсь какой-то хуйнёй."</p>
+    </div>
   </header>
 
 <!-- ОСНОВНОЙ КОНТЕНТ -->
 
-  <div class="main-info">
-    <h2>Список талантов</h2>
+  <div class="container">
+    <div class="section-title">
+      <h2>Список талантов</h2>
+    </div>
       <div class="cards">
-        <div class="talent">
+        <div class="card-talent">
           <div class="bg music">
           </div>
           <div class="talent-title">
             <p>Играю на музыкальных инструментах</p>
           </div>
         </div>
-        <div class="talent">
+        <div class="card-talent">
           <div class="bg codding">
           </div>
           <div class="talent-title">
             <p>Учусь программировать на <strong>JavaScript</strong> и Python</p>
           </div>
         </div>
-        <div class="talent">
+        <div class="card-talent">
           <div class="bg  modeling">
           </div>
           <div class="talent-title">
             <p>Занимаюсь 3D моделированием</p>
           </div>
         </div>
-        <div class="talent">
+        <div class="card-talent">
           <div class="bg chess">
           </div>
           <div class="talent-title">
@@ -78,7 +77,10 @@
 
   <footer class="footer">
     <div class="horizontalRow"></div>
-    <h4>Скажи что-нибудь</h4>
+  <div class="container">
+    <div class="section-title">
+      <h2>Скажи что-нибудь</h2>
+    </div>
     <form class ="feedback" action="">
       <div class="label">
         <label for="greating-text">Твоё пожелание:</label>
@@ -88,11 +90,12 @@
       </div>
         <input type="checkbox" name="" id="check-box">
         <label for="check-box">Отправить анонимно</label>
-      <div class="btn">
-        <input type="button" value="Самая длинная кнопка для отправки формы">
-      </div>
+        <input type="button" class="btn" value="Самая длинная кнопка для отправки формы">
     </form>
-    <div class="yourGreating">Текс будет тут</div>
+    <div class="greating-display">
+      <div class="yourGreating">Текст будет тут</div>
+    </div>
+  </div>
   </footer>
 <script src="script.js"></script>
 </body>
